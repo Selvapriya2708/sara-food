@@ -1,0 +1,1902 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    width: 100%;
+    height:100%;
+    font-family: "Ubuntu", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height:100px;
+    background-color: rgb(19, 19, 21);
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.navbar{
+    display: block;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    justify-content: space-around;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.scroll{
+    font-size: 30px;
+    color:white;
+    font-family: "Ubuntu", sans-serif;
+    display: none;
+}
+header img
+{
+    width:100px;
+    height:100px;
+    margin: 10px;
+}
+header #menu-bar{
+    display: none;
+    color:white;
+    margin-right: 40px;
+    display: none;
+}
+header .navbar{
+    margin-right: 50px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:rgb(45, 45, 159)
+}
+.home{
+    width:100%;
+}
+.home h1{
+    font-size: 60px;
+    text-align: center;
+    color:white;
+    padding-top: 320px;
+}
+.home h3{
+    font-size: 45px;
+    text-align: center;
+    color:white;
+    padding-top: 20px;
+}
+.view-btn{
+    background-color: rgb(161, 31, 31);
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 42%;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 50px;
+    color:white;
+}
+.about{
+    display: flex;
+    width: 100%;
+    height:700px;
+    color:white;
+    justify-content: space-between;
+    margin-top: 200px;
+    background-color: rgb(110, 110, 116);
+}
+.about h1{
+    color:white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 55px;
+    padding-top: 65px;
+    text-align: center;
+    margin-top: 50px;
+}
+.about article{
+    width:50%;
+    height:700px;
+}
+.about p{
+    text-align: justify;
+    height:100%;
+    padding: 30px;
+}
+.about aside{
+    width:50%;
+    height:700px;
+}
+.about img{
+    width:100%;
+    height:100%;
+}
+.menu{
+    width:100%;
+    padding-top: 110px;
+    background-color: rgb(110, 110, 116);
+}
+.menu h1{
+    color:white;
+    font-size:60px;
+    text-align: center;
+}
+.menu table{
+    width:100%;
+    height: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.menu table tr{
+    width:100%;
+    height:300px;
+}
+.menu table td{
+    width:400px;
+    height:100%;
+}
+.menu table td img{
+    height:100%;
+    width:100%;
+}
+.menu table td img:hover{
+    opacity: 0.5;
+}
+.book{
+    width:100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7  )),url(book-table-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+    text-align: center;
+}
+.book h1{
+    padding-top: 5px;
+    font-size: 70px;
+    color:white;
+}
+form [type]{
+    width:300px;
+    height:50px;
+    padding:10px;
+    margin-left: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    font-size: 20px;
+}
+input::placeholder{
+    color:white;
+}
+.book form{
+   padding-top: 120px;
+   height:400px;
+}
+.book input[type=submit]{
+    background-color:rgb(161, 31, 31);
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 100px;
+    color:white;
+} 
+.events{
+    padding-top: 120px;
+    width: 100%;
+    background-color: rgb(110, 110, 116) ;9
+}
+.events div h1{
+    color:white;
+    font-size: 70px;
+    text-align: center;
+}
+.events input[type="submit"]{
+    background-color: rgb(161, 31, 31);
+    border-radius: 5px;
+    border:none;
+    padding: 15px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.events div .food{
+    margin-left: 42%;
+}
+.events div .juice{
+    margin-left: 10px;
+}
+.article{
+    display: flex;
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+}
+.article .art1{
+    background-image: url(blog-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+.article .art2{
+    background-image: url(blog-2.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    background-size: 100% 300px;
+    margin-left: 10px;
+}
+.article .art3{
+    background-image: url(blog-3.jpg);
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    background-size: 100% 300px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.article .art1 p{
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    margin-top: 330px;
+}
+.article .art2 p{
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    margin-top: 330px;
+}
+.article .art3 p{
+    font-size: 15px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    margin-top: 330px;
+}
+.review{
+    width: 100%;
+    background-color: rgb(110, 110, 116);
+    padding-top: 110px;
+}
+.review h1{
+    font-size: 70px;
+    color:white;
+    text-align: center;
+}
+.name{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.name1 h3{
+    color: white;
+    font-size: 34px;
+}
+.name1 p{
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.name2 h3{
+    color: white;
+    font-size: 34px;
+    margin-left: 20px;
+}
+.name2 p{
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.name3 h3{
+    color: white;
+    font-size: 34px;
+    margin-left: 7px;
+}
+.name3 p{
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.review-book{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 50px;
+    margin-right: 30px;
+    padding-bottom: 50px;
+}
+.review-box1 article{
+    border: 1px solid white;
+    width: 400px;
+    height: 130px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    margin-top: 100px;
+}
+.review-box2 article{
+    border: 1px solid white;
+    width: 400px;
+    margin-left: 20px;
+    height: 130px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    margin-top: 100px;
+}
+.review-box3 article{
+    border: 1px solid white;
+    width: 400px;
+    margin-left: 20px;
+    height: 130px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    margin-top: 100px;
+}
+.contact{
+    background-color:rgb(110, 110, 116) ;
+    width: 100%;
+    height: 100%;
+}
+.contact-way{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 170px;
+    margin-right: 170px;
+    color: white;
+    padding-top: 150px;
+    font-size: 34px;
+}
+.contact-value{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 140px;
+    color: black;
+    padding-top: 40px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.contact-value .number{
+    margin-right: 60px;
+}
+.copyright{
+    padding-top: 140px;
+    padding-bottom: 80px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+/*--------------------------------Media query-------------------*/
+/*
+@media (max-width:1150px){
+    .navbar a{
+        text-decoration: none;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+}
+
+@media all and (max-width:880px){
+    header{
+        width:100%;
+        display: flex; 
+        flex-direction: column;
+        height: 80px;
+    }
+    header #menu-bar{
+        display: block;
+        position: absolute;
+        top:50px;
+        left:0px;
+        margin-left: 15px;
+        font-size: 15px;
+    }  
+    .scroll{
+    font-size: 30px;
+    margin-top: 35px;
+    }
+    header img{
+        margin-right: 15px;
+        align-self: flex-end;
+        height:80px;
+        margin-top: 7px;
+    }
+    header .navbar{
+        position: absolute;
+        left:0px;
+        width:100%;
+        padding:10px 0px;
+        background-color: rgb(31, 29, 29);
+        margin-top: 90px;
+        display: none;
+    }
+    header .navbar a{
+        font-size: 15px;
+        margin:10px;
+        display: block;
+    }
+     .home h1{
+        font-size: 45px;
+        padding-top: 200px;
+    }
+    .home h3{
+      font-size: 40px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .home .view-btn{
+        margin-top: 70px;
+        margin-left:40%;
+        background-color: rgb(161, 31, 31);
+        font-size: 20px;
+        width:200px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .about article{
+        width:50%;
+        height:700px;
+        background-color: rgb(110, 110, 116);
+    }
+    .about aside{
+        width:50%;
+        height:700px;
+    }
+    .about img{
+        width:100%;
+        height:100%;
+    }
+    .about h1{
+        padding-top: 35px;
+        font-size: 43px;
+    }
+    .about p{
+        margin: 15px;
+        font-size: 13px;
+    } 
+    .menu h1{
+        font-size: 43px;
+    } 
+    .menu{
+        padding-top: 120px;
+    }
+    .menu table tr{
+        width:100%;
+        height:250px;
+    }
+    .book h1{
+        font-size: 43px;
+    }
+    form [type]{
+        width:230px;
+        height:40px;
+        padding:10px;
+        margin-left: 5px;
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 17px;
+    }
+    input[type="date"]{
+        margin-top: 13px;
+    }
+    .book input[type="submit"]{
+        background-color:rgb(161, 31, 31);
+        padding:9px;
+        border: none;
+        border-radius: 5px;
+        width: 190px;
+        font-size: 20px;
+        margin-top: 80px;
+       position: relative;
+    }   
+.events div h1{
+    font-size: 43px;
+    margin-top: 10px;
+}
+.events input[type="submit"]{
+    margin-top: 80px;
+}
+.article{
+    margin-top: 80px;
+    height: 400px;
+}
+.events div .food{
+    margin-left: 37%;
+} 
+.article .art1{
+    width: 280px;
+    background-size: 100% 230px;
+    margin-left: 8px;
+}
+.article .art2{
+    width: 280px;
+    margin-left: 7px;
+    background-size: 100% 230px;
+}
+.article .art3{
+    width: 280px;
+    margin-left: 7px;
+    background-size: 100% 230px;
+}
+.article .art1 p{
+    font-size: 14px;
+    margin-top: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.article .art2 p{
+    font-size: 14px;
+    margin-top: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.article .art3 p{
+    font-size: 14px;
+    margin-top: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.review h1{
+    font-size: 43px;
+    margin-top: 10px;
+}
+.name{
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+}
+.name h3{
+    font-size: 27px;
+}
+.name p{
+    font-size: 17px;
+}
+.review-book{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.review-book article p{
+    font-size: 14px;
+}
+.review-book article{
+    width: 220px;
+    height: 140px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 90px;
+}
+.contact-way{
+    font-size: 25px;
+    margin-left: 53px;
+    margin-right: 53px;
+}
+.contact-value{
+    font-size: 15px;
+    margin-left: 38px;
+    margin-right: 38px;
+}
+.copyright{
+    font-size: 17px;
+}
+}
+
+@media all and (max-width:600px){
+    .home h1{
+      font-size: 55px;
+      margin-left: 30%;
+      margin-top: 120px;
+    }
+    .home h3{
+        font-size: 45px;
+        margin-left: 30%;
+    }
+    .home .view-btn{
+        margin-left: 50%;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    header{
+        width:100%;
+        height:90px;
+    }
+    header .navbar a{
+        font-size: 15px;
+    }
+    header #menu-bar{
+        font-size: 20px;
+    }
+    header img{
+        margin-right: 20px;
+        height: 80px;
+    }
+    .about{
+        width: 140%;
+    }
+    .about h1{
+        font-size: 50px;
+        margin-left: 3%;
+        margin-top: 90px;
+    }
+    .about article{
+        height:750px;
+        background-color: rgb(62, 62, 74);
+        width:100%;
+    }
+    .about aside{
+        display: none;
+    }
+    .about p{
+        font-size: 18px;
+        margin-top: 7px;
+    }  
+    .menu{
+        width: 140%;
+        background-color: rgb(62, 62, 74);
+    }
+    .menu h1{
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .menu table tr{
+        width:100%;
+        height:160px;
+    }
+    .book{
+        padding-top: 90px;
+        width: 140%;
+        height: 800px;
+        }
+    .book h1{
+        font-size: 50px;
+        margin-top: 45px;
+    }
+        form [type]{
+            width:220px;
+            height:40px;
+            padding:10px;
+            margin-left: 35%;
+            margin-top: 10px;
+            background-color: transparent;
+            border: 1px solid white;
+            color:white;
+            font-size: 15px;
+            display: flex;
+        }
+        .book form{
+            padding-top: 40px;
+         }
+         .book input[type=submit]{
+            background-color:rgb(161, 31, 31);
+            padding:9px;
+            border: none;
+            border-radius: 5px;
+            width: 170px;
+            font-size: 18px;
+            margin-top: 80px;
+            color:white;
+            margin-left: 40%;
+        }
+        .events{
+            width: 140%;
+        }
+        .events div h1{
+            font-size: 50px;
+        }
+        .article{
+           height:340px;
+        }
+        .article .art1{
+            background-size: 100% 170px;
+            margin-bottom: 10px;
+        }
+        .article .art2{
+            background-size: 100% 170px;
+            margin-bottom: 10px;
+        }
+        .article .art3{
+            background-size: 320px;
+            margin-right: 10px;
+            background-size: 100% 170px;
+            margin-bottom: 10px;
+        }
+        .article .art1 p{
+            margin-top: 180px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 14px;
+        }
+        .article .art2 p{
+            margin-top: 180px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 14px;
+        }
+        .article .art3 p{
+            margin-top: 180px;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 14px;
+        }
+        .events div .food{
+            margin-left: 36%;
+            padding: 10px;
+        }
+        .events div .juice{
+            padding: 10px;
+        }
+        .review{
+            width: 140%;
+            padding-top: 150px;
+        }
+        .review h1{
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        .review h3{
+            font-size: 33px;
+        }
+        .review p{
+            font-size: 20px;
+        }
+        .contact{
+            width: 140%;
+        }
+        .contact-value{
+            font-size: 20px;
+        }
+        .contact-way{
+            font-size: 32px;
+            margin-left: 80px;
+            margin-right: 70px;
+        }
+        .copyright{
+            font-size: 22px;
+    }
+}
+@media all and (max-width:465px){
+    .home h1{
+       font-size: 80px;
+       margin-left: 35%; 
+       width: 500px;
+       margin-top: 140px;
+    }
+    .home h3{
+        font-size: 55px;
+        margin-left: 45%;
+        margin-top: 30px; 
+        width: 400px;
+    }
+    .home .view-btn{
+        margin-left: 63%;
+        margin-top: 130px;
+        font-size: 25px;
+        height: 68px;
+        width: 250px;
+    }
+    header{
+        height:140px;
+    }
+    header .navbar a{
+        font-size: 20px;
+        display: block;
+    }
+    header img{
+        height: 100px;
+        margin-top: 30px;
+    }
+    header #menu-bar{
+        margin-top: 20px;
+        font-size: 25px;
+    } 
+    .scroll{
+    font-size: 45px;
+    margin-top: 35px;
+    }
+    .about{
+        height: 900px;
+        background-color: rgb(62, 62, 74);
+    }
+    .about h1{
+        font-size: 55px;
+        padding-top:80px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    .menu{
+        padding-top: 150px;
+    }
+   .menu h1{
+      font-size: 55px;
+   }
+   .menu table{
+       margin-top: 50px;
+   }
+   .menu table tr{
+    height:130px;
+    }
+   .book{
+    padding-top: 120px;
+    height: 900px;
+    }
+    form [type]{
+        margin-left: 35px;
+        margin-top: 14px;
+        font-size: 20px;
+        padding: 20px;
+        margin-left: 36%;
+    }
+    .book form{
+        padding-top: 90px;
+     }
+     input[type="date"]{
+        margin-top: 15px;
+     }
+     .book input[type=submit]{
+        background-color:rgb(161, 31, 31);
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        font-size: 22px;
+        margin-top: 80px;
+        color:white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 60px;
+    }
+    .book h1{
+        font-size: 55px;
+        padding-top: 40px;
+        margin-left: 10%;
+    } 
+.events .food{
+    margin-left: 32%;
+}
+.events div h1{
+    font-size: 55px;
+}
+.about{
+    width: 185%;
+}
+.menu{
+    width: 185%;
+}
+.book{
+    width: 185%;
+}
+.events{
+    width: 185%;
+}
+.events div input[type="submit"]{
+    margin-top: 50px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.events div .food{
+    margin-left: 36%;
+}
+.article{
+    display: inline-block;
+    width: 100%;
+}
+.article .art1{
+    background-size: 100% 200px;
+    width: 600px;
+    margin-left: 100px;
+}
+.article .art2{
+    background-size: 100% 200px;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 13px;
+}
+.article .art3{
+    display: none;
+}
+.article .art1 p{
+    margin-top: 220px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.article .art2 p{
+    margin-top: 220px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.article .art3 p{
+    margin-top: 220px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.review{
+    width: 185%;
+    padding-top: 150px;
+}
+.review h1{
+    font-size: 55px;
+}
+.name{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+.name h3{
+    font-size: 31px;
+    margin-left: 15px;
+}
+.name .p2{
+    margin-left: 40px;
+}
+.name p{
+    font-size: 22px;
+}
+.review-book article{
+    height: 220px;
+    margin-top: 100px;
+}
+.review-book .review-box3 article{
+    margin-right: 5px;
+    margin-bottom: 50px;
+}
+.review-book article p{
+    font-size: 19px;
+}
+.contact{
+    width:185%
+}
+}
+@media all and (max-width:360px){
+    .home h1{
+        margin-top: 300px;
+        margin-left: 40%;
+        font-size: 90px;
+    }
+    .home h3{
+        margin-left: 60%;
+        font-size: 60px;
+    }
+    .home .view-btn{
+        margin-left: 80%;
+        margin-top: 300px;
+        height: 80px;
+    }
+    .about{
+        width: 233%;
+    }
+    .about h1{
+        margin-top: 150px;
+    }
+    .about p{
+        font-size: 25px;
+    }
+    .menu{
+        width: 233%;
+    }
+    .menu h1{
+        margin-top: 360px;
+    }
+    .book{
+        width: 233%;
+    }
+    .events{
+        width: 233%;
+    } 
+    .review{
+        width: 233%;
+    } 
+    .contact{
+        width: 233%;
+    }
+} 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "PT Serif", serif;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(29, 29, 30);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+header #menu-bar{
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    display: none;
+}
+header .navbar{
+    margin-right: 50px;   
+}
+.scroll{
+    color:white;
+    display: none;
+    }
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 50px;  
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #59B2f4;
+}
+.home{
+    width: 100vw;
+    padding-top: 30px;
+}
+.home h1{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin-top:250px;
+}
+.home h3{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.home button{
+    margin-top: 70px;
+    margin-left: 43%;
+    background-color: rgb(170, 27, 27);
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+/*-----------------------------about---------------------------------------------------*/
+
+.about{
+    width: 100vw;
+    display: flex;
+    margin-top: 150px;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.about aside{
+    width: 42vw;
+    height: 700px;
+}
+.about aside img{
+    width: 100%;
+    height: 100%;
+}
+.about article{
+    width: 57vw;
+    height: 700px;
+    background-color: rgb(96, 95, 96);    
+}
+article h3{
+    font-size: 50px;
+    padding: 30px;
+    color: white;
+}
+article p{
+    color: white;
+    font-size: 18px;
+    text-align:justify;
+    padding: 0px 20px 20px 20px;
+}
+article p span{
+    font-weight: bold;
+}
+/*-----------------------gallery Style------------------------------*/
+.gallary{
+    width: 100vw;
+    background-color: rgb(96, 95, 96);
+    padding-top: 80px;  
+}
+.gallary h3{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+table{
+    width: 100vw;
+    height:calc(100vh-30px);
+    border-collapse: collapse;
+    border-style: hidden;
+    margin-top: 30px;
+    table-layout: fixed;
+}
+tr{
+    width: 100%;
+    height: 300px;
+}
+td{
+    width: 300px;
+    height: 100%;
+}
+ td img{
+    width: 100%;
+    height: 100%;
+}
+td:hover{
+    opacity: 0.5;  
+}
+/*------------------------book a table style---------------------*/
+
+.book{
+    width: 100vw;
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)) ,url(book-table-img.jpg);
+    padding-top: 70px;
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
+.book h3{
+    font-size: 60px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+.book .book-table{
+    width: 100%;
+    height: 400px;
+    padding-top: 50px; 
+}
+.book-table [type]{
+    width: 300px;
+    height: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border: 1px solid white;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+
+.book-table input[type=submit]{
+    background-color: brown;
+    color: white;
+    font-size: 20px; 
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 45%;
+    border-radius: 2px;
+    border: 2px double rgb(170, 27, 27);
+}
+.book-table input::placeholder{
+    color: white;
+}
+/*------------------------Blog style-------------------------------------*/
+
+.blog{
+    width: 100vw;
+    background-color: rgb(96, 95, 96);
+    padding-top:50px ;
+}
+.blog h1{
+    font-size: 60px;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+.blog a{
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(170, 27, 27);
+    margin-left: 20px;
+}
+.blog #an1{
+    margin-left: 43%;
+}
+.blog #food{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top:50px;
+    padding-top: 120px;
+}
+#food .ar1{
+    background-image: url(blog-1.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border: 1px solid white;
+}
+.para1{
+    color: white;
+    font-size: 15px; 
+    margin-top: 320px;
+    text-align: center;
+}
+.para1 span{
+    text-align: justify;
+    font-size: 15px;
+}
+#food .ar2{
+    background-image: url(blog-2.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border: 1px solid white;
+}
+.para2{
+    color: white;
+    font-size: 15px; 
+    margin-top: 320px;
+    text-align: center;
+}
+.para2 span{
+    text-align: justify;
+    font-size: 15px;
+}
+#food .ar3{
+    background-image: url(blog-3.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border: 1px solid white;
+}
+.para3{
+    color: white;
+    font-size: 15px; 
+    margin-top: 320px;
+    text-align: center;
+}
+.para3 span{
+    text-align: justify;
+    font-size: 15px;
+}
+#juice{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top:50px;
+    padding-top: 50px;
+}
+#juice .ar1{
+    background-image: url(blog-4.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border: 1px solid white;
+}
+#juice .ar2{
+    background-image: url(blog-5.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border: 1px solid white;
+}
+#juice .ar3{
+    background-image: url(blog-6.jpg);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border: 1px solid white;
+}
+/*-----------------------Contact---------------------------*/
+
+.contact{
+    padding-top: 80px;
+    width: 100vw;
+}
+.contact h2{
+    color: white;
+    text-align: left;
+    font-size: 50px;
+    margin: 50px;
+}
+.contact span{
+    margin-left: 15px;
+}
+.contact form{
+    max-width: 70rem;
+    margin:1rem auto; 
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.contact form .input-box input{
+    width:100%;
+    padding:20px;
+    font-size: 20px;
+    color: #fff;
+    background:transparent;
+    border-radius: 12px;
+    margin:0.7rem 0; 
+    border: 1px solid white;
+}
+.contact form textarea{
+    width:1070px; 
+    margin:0.7rem 0; 
+    padding: 1.5rem;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+.contact form textarea::placeholder{
+    color:white;
+}
+.contact form input::placeholder{
+    color:white;
+}
+.contact form .input-box input{
+    width:40%;
+}
+.contact form .btn{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin-left: 42%;
+    color: #fff;
+    background: rgb(170, 27, 27);
+    border-radius: 10px;
+    border-color: none;
+    font-size: 20px;
+}
+/*------------------------------Review------------------------------------*/
+
+.review{
+      padding-top: 100px;
+      width: 100vw;
+}
+.review .review_block{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.review h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.review .rev1{
+    border:1px solid white;
+    width:30%;
+    margin-left: 15px;
+}
+.review .rev1 h3,h5,p{
+    color: white;
+    padding: 20px;
+}
+.review .rev1 h3{
+    font-size: 30px;
+}
+.review .rev1 h5,p{
+    font-size: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 9%;
+    background:rgb(96, 95, 96);  
+}
+.footer-text{
+    font-size:20px;  
+}
+.footer-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background:cadetblue;
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
+}
+.footer-icon a i{
+   font-size: 25px;
+  
+}
+.btn{
+    border: none;
+}
+
+/*------------------------Media Query------------------------------------*/
+
+@media (max-width:1150px){
+    header{
+        position: fixed;
+        top: 0px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: white;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-left: 28px;  
+    }
+    .home button{
+        margin-left: 38%;
+    }
+ 
+    .about aside{
+        width: 42vw;
+     
+    }
+    .about article{
+        width: 57vw;
+
+        background-color: rgb(96, 95, 96);    
+    }
+    article h3{
+        font-size: 40px;
+    }
+    article p{
+        font-size: 15px;
+    }
+    table{
+        width: 100%;
+        height: auto;
+    }
+    tr{
+        width: 100%;
+        height: 210px; 
+        border: 1px solid rgb(101, 99, 103);
+    }
+    td{
+        width: 210px;
+        height: 100%;
+        border: 1px solid rgb(100, 98, 101) ;
+    }
+    .book .book-table{
+        width: 100%;
+        height: auto;
+        padding-top: 50px; 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .book-table [type]{
+        width: 200px;
+        height: 50px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .book-table input[type=submit]{
+        margin-left: 400px;
+    }
+    .book{
+        padding-top: 200px;
+    }
+    #food .ar1,#food .ar2,#food .ar3,#juice .ar1,#juice .ar2,#juice .ar3{  
+        background-size: 100% 250px; 
+    }
+    .para1,.para2,.para3{
+        font-size: 12px;  
+    }
+    .para1 span,.para2 span,.para3 span{
+        text-align: justify;
+        font-size: 12px;
+    }
+    #juice{
+        margin-top:50px;
+        padding-top:120px;
+    }
+    .contact{
+        padding-top: 60px;
+        width: 100vw;
+    }
+    .contact h2{
+        font-size: 45px;
+        margin: 40px;
+    }
+   
+
+
+}
+@media all and (max-width:880px){
+    header{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;   
+    }
+    header #menu-bar{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        margin-left: 15px;
+    }
+    header img{
+        margin: 15px;
+        align-self: flex-end;
+    }
+    header .navbar{
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        width: 100%;
+        padding: 10px 0px;
+        background-color: rgb(29, 29, 30);
+        display: none;
+    }
+    header .navbar a{
+        font-size: 20px;  
+        margin: 10px;
+        display: block;
+    }
+    .scroll{
+        font-size: 30px;
+        margin-top: 35px;
+        }
+    .home h1{
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        margin-top: 300px;
+    }
+    .home h3{
+        font-size: 40px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+    }
+    .home button{
+        margin-top: 70px;
+        margin-left: 38%;
+    }
+  
+    article p{
+        font-size: 13px;
+    }
+    article span{
+        font-size: 13px;
+    }
+    tr{
+        width: 100%;
+        height: 150px; 
+        border: 1px solid rgb(101, 99, 103);
+    }
+    td{
+        width: 150px;
+        height: 100%;
+        border: 1px solid rgb(100, 98, 101) ;
+    }
+    .book-table input[type=submit]{
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    #food .ar1,#food .ar2,#food .ar3,#juice .ar1,#juice .ar2,#juice .ar3{  
+        background-size: 100% 200px; 
+    }
+    .para1,.para2,.para3{
+        font-size: 10px; 
+        margin-top: 210px;
+    }
+    .para1 span,.para2 span,.para3 span{
+        text-align: justify;
+        font-size: 10px;
+    }
+    .blog #food,.blog #juice{
+        height: 400px;
+    }
+    .blog a{
+        margin-left: 10px;
+    }
+    .blog #an1{
+        margin-left: 35%;
+    }
+    .blog h1{
+        font-size: 50px;
+    }
+    .contact form textarea{
+        width:90%; 
+        font-size: 15px;
+    }  
+}
+@media all and (max-width:600px){
+    .home h1{
+        font-size: 45px;
+    }
+    .home h3{
+        font-size: 35px;
+    }
+    .home button{
+        margin-left: 35%;  
+    }
+    article p{
+        font-size: 11px;
+    }
+    article span{
+        font-size: 11px;
+    }
+    .gallary{
+        padding-top: 70px;
+        margin-top: 10px;
+    }
+    tr{
+        width: 100%;
+        height: 100px; 
+        border: 1px solid rgb(101, 99, 103);
+    }
+    td{
+        width: 100px;
+        height: 100%;
+        border: 1px solid rgb(100, 98, 101) ;
+    }
+    input[type=submit]{
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+    .blog{
+        width: 100vw;
+        background-color:rgb(96, 95, 96);  
+        padding-top: 50px;
+    }
+    .blog h1{
+        margin-top: 10px;
+        padding-top: 50px;
+        font-size: 40px;
+    }
+    .blog a{
+        display: none;
+    }
+    .blog #food{
+        width: 100%;
+        height: 1050px;
+        display: flex;
+        flex-direction: column; 
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+    .blog #juice{
+        width: 100%;
+        height: 1050px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding-top: 0px; 
+    }
+    .blog h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .para1,.para2,.para3{
+        font-size: 10px; 
+      
+    }
+    .para1 span,.para2 span,.para3 span{
+        text-align: justify;
+        font-size: 10px;
+    }
+    .contact form .btn{
+        
+        margin-left: 47%;
+        width: 120px;
+        height: 40px;
+       
+        font-size: 15px;
+    }
+    .review .review_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .review .rev1{
+        margin: 10px;
+        width: 85%;  
+    }
+    .review h1{
+        font-size: 40px;  
+    }
+    .footer-icon a i{
+        font-size: 15px;   
+     }
+     .footer-text{
+        font-size:15px;  
+    }
+    .footer{
+        padding: 8px 8px;
+    }
+   
+}
+@media all and (max-width:465px){
+
+    body{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("main.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        width: 100vw;
+        height: 100vh;
+        font-family: "PT Serif", serif;
+    }
+    .home h1{
+        font-size: 42px;
+    }
+    .home h3{
+        font-size: 33px;
+    }
+    .home button{
+        margin-left: 30%;  
+    }
+    .about aside{
+        display: none;
+    }
+    .about article{
+        width: 100vw;
+        height: 700px;
+        background-color:transparent;
+    }
+    article p{
+        font-size: 13px;
+    }
+   
+    .gallary h3{
+        font-size: 50px;
+    }
+    input[type=submit]{
+        margin-top: 10px;
+        margin-left: 250px;  
+    }
+    .book h3{
+        font-size: 40px;
+    }
+    input[type=submit]{
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+    .blog{
+        width: 100vw;
+        background-color:rgb(96, 95, 96);  
+        padding-top: 50px;
+    }
+    .blog h1{
+        margin-top: 10px;
+        padding-top: 50px;
+        font-size: 40px;
+    }
+    .footer-icon a i{
+        font-size: 8px; 
+      
+     }
+     .footer-text{
+        font-size:8px;  
+    }
+    .footer{
+        padding: 4px 4px;
+    }
+    
+   
+}
+@media all and (max-width:410px){
+    body{
+        width: 100vw;
+    }
+    .home h1{
+        font-size: 40px;
+    }
+    .home h3{
+        font-size: 30px;
+    }
+    .home button{
+        margin-left: 28%;  
+    }
+    .book h3{
+        font-size: 30px;
+    }
+    input[type=submit]{
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+   
+   
+}
+@media all and (max-width:380px){
+    
+    .home h1{
+        font-size: 35px;
+    }
+    .home h3{
+        font-size: 25px;
+    }
+    .home button{
+        margin-left: 25%;  
+    }
+    tr{
+        height: 50px; 
+    }
+    td{
+        width: 50px;
+    }
+    .gallary{
+        padding-top: 70px;
+        margin-top: 10px; 
+    }
+    .gallary h3{
+        font-size: 40px;
+    }
+    input[type=submit]{
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+    .blog h1{
+        font-size: 30px;
+    }
+}
